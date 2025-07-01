@@ -9,21 +9,23 @@ import time
 driver = webdriver.Chrome()
 
 # Replace with the actual URL of your login page
-url = "http://example.com/login"
+url = "https://the-internet.herokuapp.com/login"
 driver.get(url)
 
 # Define login function
 def test_login(username, password):
     driver.find_element(By.NAME, "username").clear()
     driver.find_element(By.NAME, "username").send_keys(username)
+
     driver.find_element(By.NAME, "password").clear()
     driver.find_element(By.NAME, "password").send_keys(password)
+    
     driver.find_element(By.NAME, "password").send_keys(Keys.RETURN)
     time.sleep(2)  # Wait for response
 
 # Test 1: Valid credentials
 print("Testing valid credentials...")
-test_login("valid_user", "valid_pass")
+test_login("tomsmith", "SuperSecretPassword!")
 
 # Capture screenshot
 driver.save_screenshot("valid_login_result.png")
