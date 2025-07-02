@@ -1,4 +1,4 @@
-**Task 1 Analysis: AI vs Manual Code Completion**
+# Task 1 Analysis: AI vs Manual Code Completion
 
 **Objective**
 
@@ -35,21 +35,15 @@ Robustness: Also used .get(), but less scalable.
 
 **Comparison**
 
-Feature	Copilot Version	Manual Version
-
-Algorithm Used	Built-in sorted()	Bubble Sort
-
-Time Complexity	O(n log n)	O(n²)
-
-Readability	High	Low
-
-Scalability	Excellent	Poor
-
-Code Length	Short	Long
-
-Maintainability	Easy	Harder
+| Feature          | Copilot Version | Manual Version |
+|-----------------|-----------------|----------------|
+| Algorithm Used  | Built-in sorted() | Bubble Sort   |
+| Time Complexity | O(n log n)      | O(n²)          |
+| Readability     | High            | Low            |
+| Scalability     | Excellent       | Poor           |
+| Code Length     | Short           | Long           |
+| Maintainability | Easy            | Harder         |
 
 **Reflection**
 
 Using GitHub Copilot significantly accelerated development. It suggested a clean and Pythonic solution, saving time and reducing bugs. The manual version, although functional, was inefficient and verbose. This highlights how AI can optimize routine coding tasks and promote best practices—even for beginner to intermediate developers.
-
